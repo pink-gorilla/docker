@@ -23,18 +23,22 @@ RUN git clone -b uijs https://github.com/pink-gorilla/gorilla-notebook.git
 # Add Leiningen to path
 ENV PATH /usr/local/bin/:$PATH
 
-
 WORKDIR /home/gorilla/gorilla-notebook
+
+# keep the dependencies in the notebook image, so on start they dont have to be installed. :-)
+RUN lein deps
+
+#WORKDIR /home/gorilla
+#ADD ./startFig.sh /home/gorilla/startFig.sh
+
 EXPOSE 3449
-# CMD ["/usr/local/bin/lein" "do" "clean," "run" "-m" "clojure.main script/figwheel.clj"]
 
 # RUN lein
-ENTRYPOINT ["lein"]
-
+#ENTRYPOINT ["lein"]
 #ENTRYPOINT ["/bin/bash"]
 #ENTRYPOINT ["/usr/local/bin/lein"]
+
+# CMD ["/bin/ping", "localhost"]
 #CMD ["do" "clean," "run" "-m" "clojure.main script/figwheel.clj"]
-CMD ["do" "run" "-m" "clojure.main script/figwheel.clj"]
 
-
-
+CMD ["lein", "run", "-m", "clojure.main" , "script/figwheel.clj"]
