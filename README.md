@@ -12,6 +12,8 @@ kubectl delete deployment nginx-app
 kubectl run --image=docker.io/pinkgorillawb/notebook-dev pinkgorilla-notebook --port=3449 --env="DOMAIN=cluster"
 
 
+kubectl delete deployment pinkgorilla-notebook
+
 ```
 
 https://devhub.io/repos/palletops-lein-uberimage
