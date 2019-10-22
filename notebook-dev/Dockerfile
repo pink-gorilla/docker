@@ -19,8 +19,22 @@ RUN git clone -b uijs https://github.com/pink-gorilla/gorilla-notebook.git
 # instead of logging to stdout, you may log to file in /log. create volume or mount host volume to /log
 # RUN mkdir /log && chown daemon /log
 
+
+# Add Leiningen to path
+ENV PATH /usr/local/bin/:$PATH
+
+
 WORKDIR /home/gorilla/gorilla-notebook
 EXPOSE 3449
-CMD ["lein" "do" "clean," "run" "-m" "clojure.main script/figwheel.clj"]
+# CMD ["/usr/local/bin/lein" "do" "clean," "run" "-m" "clojure.main script/figwheel.clj"]
+
+# RUN lein
+ENTRYPOINT ["lein"]
+
+#ENTRYPOINT ["/bin/bash"]
+#ENTRYPOINT ["/usr/local/bin/lein"]
+#CMD ["do" "clean," "run" "-m" "clojure.main script/figwheel.clj"]
+CMD ["do" "run" "-m" "clojure.main script/figwheel.clj"]
+
 
 

@@ -6,7 +6,7 @@
 
 name="pinkgorillawb/notebook-dev"
 
-sudo docker run \
+docker run \
     -dit \
     --restart unless-stopped \
     -p 3449:3449 \
