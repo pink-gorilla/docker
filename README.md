@@ -11,3 +11,5 @@ kubectl delete deployment nginx-app
 
 ```
 
+
+kubectl run --image=nginx nginx-app --port=80 --env="DOMAIN=cluster"
