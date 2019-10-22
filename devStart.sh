@@ -4,7 +4,7 @@
 # -e NODE_ENV=${NODE_ENV} \
 # -v /home/pinkgorilla/log/dev:/home/pinkgorilla/dev/log \
 
-name="pinkgorilla/notebook-dev"
+name="pinkgorillawb/notebook-dev"
 
 sudo docker run \
     -dit \

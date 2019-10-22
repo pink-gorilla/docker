@@ -1,6 +1,6 @@
 #/bin/bash
 
-name="pinkgorilla/notebook-dev"
+name="pinkgorillawb/notebook-dev"
 
 docker build \
    --no-cache \

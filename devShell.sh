@@ -1,6 +1,6 @@
 #/bin/bash
 
-name="pinkgorilla/notebook-dev"
+name="pinkgorillawb/notebook-dev"
 
 image=`sudo docker ps -f ancestor="$name" -q`
 echo IMAGE is $image

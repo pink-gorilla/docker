@@ -1,6 +1,6 @@
 #/bin/bash
 
-name="pinkgorilla/notebook-dev"
+name="pinkgorillawb/notebook-dev"
 
 docker run \
        -p 3449:3449 \

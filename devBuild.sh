@@ -2,7 +2,7 @@
 
 # docker build --rm -t deas/gorilla-repl:latest .
 
-name="pinkgorilla/notebook-dev"
+name="pinkgorillawb/notebook-dev"
 
 docker build \
    ./notebook-dev \
