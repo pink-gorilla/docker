@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 echo "image parameter: " $1
 echo "command parameter: " $2
