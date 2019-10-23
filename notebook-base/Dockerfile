@@ -35,6 +35,6 @@ RUN git clone https://github.com/pink-gorilla/gorilla-notebook.git
 # RUN mkdir /log && chown daemon /log
 
 WORKDIR /home/gorilla/gorilla-notebook
-CMD ["lein" "do" "clean," "run" "-m" "clojure.main script/figwheel.clj"]
+CMD ["lein", "do", "clean,", "run", "-m", "clojure.main script/figwheel.clj"]
 
 
