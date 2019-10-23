@@ -1,4 +1,6 @@
 FROM  clojure:openjdk-8-lein-2.9.1
+# this image is based on openjdk:8-stretch 
+
 MAINTAINER Andreas Steffan <a.steffan@contentreich.de>
 
 #USER gorilla
