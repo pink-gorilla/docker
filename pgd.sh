@@ -91,7 +91,7 @@ case "$2" in
     ;;
          
   *)
-    echo $"Usage: $0 {build|rebuild|interactive|start|shell|push}"
+    echo $"Usage: $0 {dev|r|spark|prod} {build|rebuild|interactive|start|shell|push}"
     exit 1
 esac
 

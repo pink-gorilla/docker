@@ -11,10 +11,13 @@ WORKDIR /home/gorilla/
 
 RUN apt-get install -y git
 
-
 # the notebook has to run with the samples
-RUN git clone https://github.com/pink-gorilla/sample-notebooks
-RUN git clone -b uijs https://github.com/pink-gorilla/gorilla-notebook.git
+# RUN git clone https://github.com/pink-gorilla/sample-notebooks
+RUN git clone -b ui-r https://github.com/pink-gorilla/gorilla-notebook.git
+
+# master branch
+RUN git clone https://github.com/pink-gorilla/gorilla-notebook.git
+
 
 #CMD ["java", "-Dlog_level=info", "-jar", "/gorilla-repl-ng-standalone.jar"]
 
