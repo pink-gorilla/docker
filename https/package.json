@@ -1,0 +1,23 @@
+{
+  "name": "domainrouter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "domainrouter.js",
+  "dependencies": {
+    "node-forge": "^0.9.1",
+    "redbird": "^0.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forteco/domainrouter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/forteco/domainrouter/issues"
+  },
+  "homepage": "https://github.com/forteco/domainrouter#readme"
+}
