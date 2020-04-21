@@ -14,10 +14,10 @@ var proxy = require("redbird")({
  }
 });
 
-proxy.register("pink-gorilla.org", "http://127.0.0.1:80", {
+proxy.register("pinkgorilla.org", "http://127.0.0.1:80", {
 ssl: {
         letsencrypt: {
-          email: 'office@pink-gorilla.org',
+          email: 'office@pinkgorilla.org',
           production: true // WARNING: Only use this flag when the proxy is verified to work correctly to avoid being banned!
         }
       }
